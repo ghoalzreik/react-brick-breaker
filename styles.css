@@ -1,12 +1,65 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #130f1f, #2b193d, #111827);
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-wrapper {
+  text-align: center;
+}
+
 #title {
-  color: Plum;
+  color: plum;
+  text-shadow: 0 0 15px plum;
+  margin-bottom: 15px;
 }
+
+.info-bar {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 10px;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+#canvas {
+  background: black;
+  border: 4px solid plum;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(221, 160, 221, 0.8);
+}
+
 #pause {
-  color: Cornflowerblue;
+  color: cornflowerblue;
 }
-#restart {
-  color: Plum;
+
+.buttons {
+  margin-top: 10px;
 }
-#score {
-  color: Cornflowerblue;
+
+button {
+  color: plum;
+  background: black;
+  border: 2px solid plum;
+  padding: 10px 22px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: plum;
+  color: black;
+}
+
+#message {
+  color: white;
+  min-height: 30px;
 }
