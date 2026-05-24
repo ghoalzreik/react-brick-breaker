@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brick Breaker Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <center>
+  <main class="game-wrapper">
     <h1 id="title">Brick Breaker Game</h1>
-    <canvas id="canvas" width="800" height="300"></canvas>
-    <p id="pause">Mouse moves platform &bull; Press any key to pause</p>
-    <button onclick="reload()" id="restart">RESTART</button>
-    <div id="score"></div>
-  </center>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <div class="info-bar">
+      <span id="score">Score: 0</span>
+      <span id="lives">Lives: 3</span>
+      <span id="level">Level: 1</span>
+    </div>
+
+    <canvas id="canvas" width="800" height="400"></canvas>
+
+    <p id="pause">Move mouse or use arrow keys &bull; Press Space to pause</p>
+
+    <div class="buttons">
+      <button id="start">START</button>
+      <button id="restart">RESTART</button>
+    </div>
+
+    <h2 id="message">Click START to play!</h2>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
